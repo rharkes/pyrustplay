@@ -1,0 +1,20 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "pyrustplay"
+version = "0.0.1"
+description = "Basic setup to play with rust in python"
+readme = "README.md"
+authors = [{ name = "Rolf Harkes", email = "r.harkes@nki.nl" }]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["rust", "python", "play"]
+dependencies = [
+    
+]
+requires-python = ">=3.10"

@@ -1,0 +1,1 @@
+from .pyrustplay import runrust
