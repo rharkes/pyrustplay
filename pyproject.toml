@@ -6,7 +6,7 @@ build-backend = "maturin"
 name = "pyrustplay"
 version = "0.0.1"
 description = "Basic setup to play with rust in python"
-readme = "README.md"
+readme = "readme.md"
 authors = [{ name = "Rolf Harkes", email = "r.harkes@nki.nl" }]
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
