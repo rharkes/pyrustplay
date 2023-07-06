@@ -1,10 +1,10 @@
 [build-system]
-requires = ["maturin>=0.14,<0.15"]
+requires = ["maturin>=1.1.0"]
 build-backend = "maturin"
 
 [project]
 name = "pyrustplay"
-version = "0.0.1"
+version = "0.0.2"
 description = "Basic setup to play with rust in python"
 readme = "readme.md"
 authors = [{ name = "Rolf Harkes", email = "r.harkes@nki.nl" }]
@@ -18,3 +18,22 @@ dependencies = [
     
 ]
 requires-python = ">=3.10"
+
+[tool.mypy]
+python_version = '3.11'
+mypy_path = "src"
+packages = "pyrustplay"
+strict = true
+
+[tool.black]
+line-length = 88
+target-version = ['py310', 'py311']
+
+[tool.pytest.ini_options]
+pythonpath = [
+  './src'
+]
+
+[tool.maturin]
+python-source = "src"
+module-name = "pyrustplay.pyrustplay_rs"

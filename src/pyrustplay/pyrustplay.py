@@ -5,6 +5,5 @@ Sendstring will be imported from the compiled rust module (pyrustplay_rs.pyd) bu
 from pyrustplay.pyrustplay_rs import sendstring
 
 
-def runrust(mystring):
+def runrust(mystring: str) -> bool:
     return sendstring(mystring)
-
