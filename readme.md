@@ -2,7 +2,8 @@
 Some people learn by messing around with code, by adapting, breaking and fixing it. This repository is meant for those people. It just runs some very basic rust code in python.
 
 # Installation
-`pip install -e .`
+`maturin develop` will produce a compiled file in the `/src/pyrustplay/` directory
+`pip install -e .` will install the python code 
 
 # Usage
 ```
